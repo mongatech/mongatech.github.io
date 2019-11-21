@@ -1,2 +1,2 @@
 # monga.tech
-Company landing website
+Company static landing page
