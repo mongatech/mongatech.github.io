@@ -55,12 +55,16 @@ a:hover {
 }
 .logo-wrapper {
   position: absolute;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   right: 0;
   top: 40px;
   cursor: pointer;
 }
 .logo-wrapper a {
+  margin-left: 0.5em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
   letter-spacing: 0.25em;
