@@ -388,6 +388,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   left: 0;
   right: 0;
   width: 100vw;
+  height: auto;
   z-index: -99;
 }
 
