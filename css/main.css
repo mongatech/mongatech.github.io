@@ -59,7 +59,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  right: 0;
+  right: 15px;
   top: 40px;
   cursor: pointer;
 }
@@ -71,7 +71,7 @@ a:hover {
   text-transform: uppercase;
   color: #34A853;
   transition: all 0.3s ease-out;
-  font-size: 32px;
+  font-size: 24px;
 }
 .logo-wrapper a span {
   font-family: 'Source Sans Pro', sans-serif;
@@ -80,6 +80,9 @@ a:hover {
   text-transform: uppercase;
   color: #FFFFFF;
   /*color: #34A853;*/ /* Pearl Aqua */
+}
+.logo-wrapper img {
+  margin-left: -0.20rem;
 }
 .logo-wrapper a:hover {
   opacity: 0.8;
@@ -144,7 +147,7 @@ a:hover {
   left: 50px;
   width: 0;
   height: 0;
-  background-color: rgba(32, 64, 86, 0.8);
+  background-color: rgba(240,240,240,0.8);/*rgba(32, 64, 86,r 0.8);*/
   border-bottom-right-radius: 200%;
   z-index:-1;
   transition: border-radius linear 0.8s, width cubic-bezier(0.77, 0, 0.175, 1) 0.6s, height cubic-bezier(0.77, 0, 0.175, 1) 0.6s;
@@ -184,9 +187,9 @@ a:hover {
   transition-delay: 0.8s;
   opacity: 0;
   text-align: left;
-  color: #FFFFFF;
+  color: #3E3C3D;
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 22px;
   line-height: 1.2;
   letter-spacing: 2px;
@@ -199,14 +202,16 @@ a:hover {
   margin-top: 7px;
   margin-bottom: 7px;
 }
+
 .nav__list-item a {
   position: relative;
   text-decoration: none;
-  color: rgba(255,255,255,0.6);
+  color: rgba(10,10,10,0.6);
   overflow: hidden;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
   z-index: 2;
   padding-left: 40px;
   padding-top: 5px;
@@ -233,10 +238,10 @@ a:hover {
 	top: 0;
 }
 .nav__list-item a:hover{
-	color: rgba(255,255,255,1);
+	color: #34A853;
 }
 .nav__list-item.active-nav a{
-	color: rgba(255,255,255,1);
+	color: #34A853;
 }
 .nav__list-item.active-nav a:after{
 	height: 100%;
@@ -263,7 +268,7 @@ body.nav-active .nav:before {
           transition-delay: 0s;
 }
 body.nav-active .menu-icon__line {
-	background-color: #fff;
+	background-color: #34A853;
 	-webkit-transform: translate(0px, 0px) rotate(-45deg);
           transform: translate(0px, 0px) rotate(-45deg);
 }
@@ -350,8 +355,9 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 .section {
-  padding: 10vh 10vw;
-  min-height: 100vh;
+  padding-left: 50px;
+  margin-top: 10vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -360,8 +366,29 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 .section__header {
   text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color:#34A853;
+  margin-top: 10vh;
+  margin-bottom: 30vh;
+}
+.typeform-share {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+}
+#myVideo {
+  position: fixed;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: -99;
 }
 
 /* #Cursor
