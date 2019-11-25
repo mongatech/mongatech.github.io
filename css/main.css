@@ -353,11 +353,14 @@ body.nav-active .nav__list-item:nth-child(10) {
   from {opacity: 0.5;}
   to {opacity: 1;}
 }
-
+.main__wrapper {
+  padding-bottom: 2.5rem;
+  height: auto;
+}
 .section {
   padding-left: 50px;
   margin-top: 10vh;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -375,13 +378,19 @@ body.nav-active .nav__list-item:nth-child(10) {
   margin-top: 10vh;
   margin-bottom: 30vh;
 }
+.section__desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
 .typeform-share {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
   letter-spacing: 0.25em;
 }
 #myVideo {
-  position: fixed;
+  position: absolute;
   opacity: 0.6;
   top: 0;
   bottom: 0;
@@ -392,6 +401,59 @@ body.nav-active .nav__list-item:nth-child(10) {
   z-index: -99;
 }
 
+
+#footer {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow-y: hidden;
+  height: 7.5rem;            /* Footer height */
+  background: rgba(10,10,10,0.6);
+  
+}
+#footer .logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5em;
+  margin-left: 50px;
+}
+#footer .logo-footer a{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 24px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type:none;
+
+}
+.footer__list-item {
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 2.5rem;
+}
+.footer__list-item a{
+  text-decoration: none;
+  color: #FFFFFF;
+  letter-spacing: 0.25em;
+}
+.copyright {
+  float: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+}
 /* #Cursor
 ================================================== */
 
