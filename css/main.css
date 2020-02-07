@@ -93,8 +93,11 @@ a:hover {
   margin-left: -0.35rem;
 }
 
+.logo-wrapper a {
+  opacity: 0.85;
+}
 .logo-wrapper a:hover {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 
