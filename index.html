@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--home css-->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <video autoplay muted loop id="myVideo">
@@ -71,6 +76,30 @@
       <div class="section" id="home">
         <h1 class="section__header hover-target">home</h2>
         <h3 class="section__desc">Lorem ipsum dolor sit amet.</h3>
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog modal-newsletter">
+            <div class="modal-content">
+              <form name="newsletter" netlify>
+                <div class="modal-header">
+                  <div class="icon-box">						
+                    <i class="fa fa-envelope-open-o hover-target"></i>
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                  <h4>Subscribe to our newsletter</h4>	
+                  <p>Join our subscribers list to get the latest news, updates and special offers delivered directly in your inbox.</p>
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <span class="input-group-btn">
+                      <input type="submit" class="btn btn-primary" value="Subscribe">
+                    </span>
+                  </div>
+                </div>
+              </form>			
+            </div>
+          </div>
+        </div>
       </div>
       <div class="section" id="about">
           <h1 class="section__header hover-target">who we are</h2>

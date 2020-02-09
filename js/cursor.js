@@ -33,6 +33,7 @@ var app = function () {
     menu = document.querySelector('.menu-icon');
     menuItems = document.querySelectorAll('.nav__list-item');
     applyListeners();
+    $("#myModal").modal('show');
   };
   var applyListeners = function applyListeners() {
     menu.addEventListener('click', function () {
