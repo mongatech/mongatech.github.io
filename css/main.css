@@ -37,9 +37,11 @@ a:hover {
   position: relative;
   left: 0;
   right: 0;
-  bottom: 75rem;
+  bottom: 80rem;
   opacity: 0.7;
   z-index: -99;
+  max-width: 250rem;
+  height: auto;
 }
 
 
