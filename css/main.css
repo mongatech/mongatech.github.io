@@ -37,10 +37,10 @@ a:hover {
   position: relative;
   left: 0;
   right: 0;
-  bottom: 80rem;
+  bottom: 40rem;
   opacity: 0.7;
   z-index: -99;
-  max-width: 250rem;
+  max-width: 100%;
   height: auto;
 }
 
@@ -83,13 +83,12 @@ a:hover {
 }
 
 .banner {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 40px;
-  margin-top: -90rem;
+  margin-top: -50rem;
   z-index: 99;
 }
 
@@ -536,6 +535,12 @@ body.nav-active .nav__list-item:nth-child(10) {
   }
   .section__header {
     font-size: 24px;
+  }
+  #bg-video {
+    bottom: 0rem;
+  }
+  .banner {
+    margin-top: -10rem;
   }
 }
 
