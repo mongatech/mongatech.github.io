@@ -15,30 +15,23 @@
 
     <!-- Short description of the document (limit to 150 characters) -->
     <!-- This content *may* be used as a part of search engine results. -->
-    <meta name="description" content="Consulting, Engineering, Digital Solutions">
+    <meta name="description" content="Monga Tech LLC is a trailbrazing software and web firm with deep roots in JavaScript, Python, Go, and the cloud.">
 
-    <title>Monga Tech LLC | Software Consulting | monga.tech | Nipun Monga | Naval Monga</title>
+    <title>Monga Tech | Software & Web Consultant Agency | Free Software, IT Services, Design Assets</title>
     <!--jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-    <!--fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--home css-->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
   </head>
-  <body id="home">
-    <video autoplay muted loop id="bg-video">
-      <source src="./times-square-timelapse.mp4" type="video/mp4">
+  <body>
+    <video autoplay muted loop id="hero-video">
+      <source src="./assets/times-square-timelapse.mp4" type="video/mp4">
     </video>
-    <header class="mt-header">
-      <div class="header-wrapper">
-        <div class="logo-wrapper">
-          <a href="#home" class="hover-target"><span class="logo-text">mong</span><img src="./css/tower.svg" width="30px" alt="mongatech logo"/><span class="logo-text">tech</span></a>
-        </div>
+
+    <header>
+      <div>
         <div class="nav-button-wrapper">
           <div class="menu-icon hover-target">
             <span class="menu-icon__line menu-icon__line-left"></span>
@@ -46,17 +39,20 @@
             <span class="menu-icon__line menu-icon__line-right"></span>
           </div>
         </div>
+        <div class="logo-wrapper">
+          <a href="#" class="hover-target"><span class="logo-text">mong</span><img src="./css/tower.svg" width="24px" alt="mongatech logo"/><span class="logo-text">tech</span></a>
+        </div>
       </div>
     </header>
 
-    <div class="nav">
+    <section class="nav">
       <div class="nav__content">
         <ul class="nav__list">
           <li class="nav__list-item active-nav">
-            <a href="#home" class="hover-target">home</a>
+            <a href="#" class="hover-target">home</a>
           </li>
           <li class="nav__list-item">
-              <a href="#about" class="hover-target">about</a>
+              <a href="#team" class="hover-target">team</a>
           </li>
           <li class="nav__list-item">
             <a href="#projects" class="hover-target">projects</a>
@@ -69,35 +65,34 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
     <div class="main__wrapper">
       <section class="banner">
-        <h3 class="section__desc hover-target">Trailblazing software firm with full stack experience in Python, JAMStack, and the Cloud.</h3>
+        <h1 class="hover-target">We are a trailbrazing software firm with deep roots in <img src="./assets/javascript.svg" alt="javascript icon" width="36px" /> JavaScript, <img src="./assets/python.svg" alt="python icon" width="36px" /> Python, <img src="./assets/golang.svg" alt="go icon" width="64px" style="margin:-12px" /> Go, and the <img src="./assets/cloud.svg" alt="cloud icon" width="36px" /> cloud. <sub><a href="#team">learn more</a></sub></h1>
       </section>
-      <div class="section" id="about">
-          <h1 class="section__header hover-target">who we are</h2>
+      <div class="section" id="team">
+        <h2 class="hover-target">our team</h2>
       </div>
       <div class="section" id="projects">
-          <h1 class="section__header hover-target">what we do</h2>
+        <h2 class="hover-target">what we do</h2>
       </div>
       <div class="section" id="partners">
-        <h1 class="section__header hover-target">our partners</h2>
+        <h2 class="hover-target">our partners</h2>
       </div>
       <div class="section" id="news">
-        <h1 class="section__header hover-target">News</h2>
+        <h2 class="hover-target">recent news</h2>
       </div>
-      <div class='cursor' id="cursor"></div>
-    	<div class='cursor2' id="cursor2"></div>
-      <div class='cursor3' id="cursor3"></div>
     </div>
     <footer id="footer">
-      <div class="logo-footer">
-        <a class="logo-link hover-target" href="#home" class="hover-target"><span>mong</span><img src="./css/tower.svg" width="30px" alt="mongatech logo"/><span>tech</span></span></a>
-        <p class="copyright">© 2020</p>
-        <a class="credits" href="https://jetlaglabs.com" target="_blank"><span role="img">💛</span>&nbsp;by JetLag Labs</a>
+      <div class="logo-wrapper">
+        <a class="logo-link hover-target" href="#" class="hover-target"><span>mong</span><img src="./css/tower.svg" width="30px" alt="mongatech logo"/><span>tech</span></span></a>
+        <p class="copyright hover-target">llc © 2020</p>
       </div>
     </footer>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor2" id="cursor2"></div>
+    <div class="cursor3" id="cursor3"></div>
     <script type="text/javascript" src="./js/cursor.js"></script>
     <script type="text/javascript" src="./js/nav-transition.js"></script>
   </body>
