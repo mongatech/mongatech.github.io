@@ -25,7 +25,6 @@ html, body {
 
 
 body {
-  cursor: crosshair;
   overflow-x: hidden;
   background-color: var(--dark-text) !important;
   color: var(--dark-bg) !important;
@@ -50,26 +49,29 @@ header {
 }
 
 .logo-wrapper {
-  position: absolute;
   display: flex;
+  float: right;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  top: 2rem;
-  right: 1rem;
+  
 }
 
 .logo-wrapper a span {
   color: var(--dark-text);
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 1.47rem;
   letter-spacing: 2px;
+  font-weight: 900;
   text-transform: uppercase;
+  line-height: 32px;
 }
 
-.logo-wrapper img {
-  margin-right: 2px;
+.logo-wrapper a img {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
+
+
 
 .logo-wrapper span:hover {
   color: var(--nav-active);
@@ -89,7 +91,6 @@ header {
 
 .scrolled {
   background-color: var(--dark-bg);
-  padding: 1.25em !important;
 }
 
 a {
@@ -111,6 +112,7 @@ a {
 }
 
 .banner {
+  cursor: none;
   position: relative;
   display: flex;
   flex: 1;
@@ -122,7 +124,7 @@ a {
 }
 @media screen and (min-width: 1000px){
 	.banner {
-    width: 70%;
+    width: 65%;
   }
 }
 .banner h1 {
@@ -130,11 +132,10 @@ a {
   z-index: 2;
 }
 .banner h1 sub a{
-  font-size: 1.47rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: var(--dark-text);
-  text-decoration: underline;
-  text-decoration-color: var(--nav-active);
+  text-decoration: underline 2px var(--nav-active);
   letter-spacing: 2px;
 }
 
@@ -175,12 +176,13 @@ footer .logo-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
-  bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .copyright {
+  float: right;
   font-size: 10px;
   padding-top: var(--spacing-1);
   letter-spacing: 1px;
