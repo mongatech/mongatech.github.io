@@ -8,8 +8,9 @@
   --dark-text: #f5f5f5;
   --bg-transparent: transparent;
   --footer-ht: 15rem;
+  --spacing-0: 0rem;
   --spacing-1: 1rem;
-  --spacing-3: 3rem;
+  --spacing-2: 2rem;
   --spacing-5: 5rem;
   --nav-active: #dd4b39;
 
@@ -27,8 +28,34 @@ html, body {
 body {
   overflow-x: hidden;
   background-color: var(--dark-text) !important;
-  color: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
 }
+
+
+/* Animations */
+@keyframes fade-right {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+@keyframes fade-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+
+
 
 header {
   background-color: var(--bg-transparent);
@@ -37,8 +64,10 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
-  padding: var(--spacing-1);
+  padding: var(--spacing-2);
+  padding-bottom: var(--spacing-0);
   transition: all .2s ease-in;
+  animation: fade-down 0.7s ease-out forwards running;
 }
 
 .nav-button-wrapper {
@@ -59,7 +88,7 @@ header {
 
 .logo-wrapper a span {
   color: var(--dark-text);
-  font-size: 1.47rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 900;
   text-transform: uppercase;
@@ -68,7 +97,7 @@ header {
 
 .logo-wrapper a img {
   margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-right: -0.45rem;
 }
 
 
@@ -101,8 +130,7 @@ a {
 
 #hero-video {
   position: static;
-  margin-top: -35rem;
-  margin-left: -35rem;
+  margin-left: -4rem;
   top: 0rem;
   left: 0rem;
   right: 0rem;
@@ -116,15 +144,17 @@ a {
   position: relative;
   display: flex;
   flex: 1;
-  padding: var(--spacing-3);
-  margin-top: -50rem;
-  margin-bottom: 30rem;
-  width: 100%;
-  color: #ffffff !important;
+  padding: var(--spacing-2);
+  margin-top: -88rem;
+  width: 50vw;
+  border-top-right-radius: 2rem;
+  background-color: #f5f5f5;
+  color: #222 !important;
+  animation: fade-right 0.7s ease-out forwards running;
 }
-@media screen and (min-width: 1000px){
+@media screen and (max-width: 800px){
 	.banner {
-    width: 50vw;
+    width: 100vw;
   }
 }
 .banner h1 {
@@ -134,7 +164,7 @@ a {
 .banner h1 sub a{
   font-size: 1rem;
   text-transform: uppercase;
-  color: var(--dark-text);
+  color: var(--dark-bg);
   text-decoration: underline 2px var(--nav-active);
   letter-spacing: 2px;
 }
@@ -147,7 +177,10 @@ a {
   width: 100%;
   display: block;
   min-height: 100vh;
-  padding: var(--spacing-3);
+  padding: var(--spacing-2);
+  background: url('./pink_dust/pinkdust.png');
+  background-size: 128px;
+  background-repeat: repeat;
 }
 
 .section h2 {
@@ -169,7 +202,7 @@ footer {
   min-height: var(--footer-ht);
   background: var(--dark-bg);
   bottom: 0;
-  padding: var(--spacing-1);
+  padding: var(--spacing-2);
   
 }
 footer .logo-wrapper {
